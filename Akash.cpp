@@ -81,4 +81,5 @@ for _ in range(int(input())):
         print(ceil((k*s)/n))
     else:
         print('-1')
-                
+//-----------------------------------
+//CODE
