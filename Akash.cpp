@@ -19,3 +19,33 @@ int main() {
 	}
 	return 0;
 }
+//-----------------------------------------------------------------------------------------------
+//------CODECHEF 
+//-------------CODE:-CATSDOGS
+#include<iostream>
+#include<bits/stdc++.h>
+#include<string.h>
+using namespace std;
+
+int main()
+{
+	 long long int tc;
+	cin>>tc;
+	while(tc--)
+	{
+		long long int c,d,l,min,max;
+		cin>>c>>d>>l;
+		max=(c+d)*4;
+		if(c==d || c<2*d)
+		min=d*4;
+		else if(c>2*d)
+		min=(c-d)*4;
+		
+		if(l>=min && l<=max && l%4==0)
+		cout<<"yes\n";
+		else
+		cout<<"no\n";
+			
+	}
+	return 0;
+}
