@@ -71,3 +71,25 @@ int main() {
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
+//CODECHEF
+//CODE:-SKY210
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+	int t,year;
+	cin>>t;
+	for(int i=0;i<t;i++)
+	{
+		cin>>year;
+		if(year==2010 || year==2015 || year==2016 || year==2017 || year==2019)
+		cout<<"HOSTED \n";
+		
+		else
+		cout<<"NOT HOSTED \n";
+	}
+	
+	return 0;
+}
+//-----------------------------------------------------------------------------------
