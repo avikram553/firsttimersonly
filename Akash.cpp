@@ -71,3 +71,14 @@ int main() {
 	return 0;
 }
 //--------------------------------------------------------------------------------------------------
+//CODECHEF
+//CODE:-FLY007
+from math import ceil
+for _ in range(int(input())):
+    n,k,s=map(int,input().split())
+    bd=s-s//7
+    if(bd*n>=k*s):
+        print(ceil((k*s)/n))
+    else:
+        print('-1')
+                
