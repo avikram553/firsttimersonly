@@ -82,4 +82,59 @@ for _ in range(int(input())):
     else:
         print('-1')
 //-----------------------------------
-//CODE
+//CODE:-HAPPYAPPY2
+		#include<iostream>
+using namespace std;
+
+int main()
+{
+	unsigned long long n,k,appy,chef,x,y,z;
+	int t;unsigned long long a,b;
+	cin>>t;
+	while(t--)
+	{
+		cin>>n>>a>>b>>k;
+		x=0;y=0;z=0;
+		if(a==b)
+		{
+			cout<<"Lose"<<endl;
+		}
+		else if((a%b==0||b%a==0)&&a!=b)
+		{
+			if(b>a)
+			{
+				x=n/a;
+				y=n/b;
+				appy=x-y;
+				if(appy>=k)
+				cout<<"Win"<<endl;
+				else
+				cout<<"Lose"<<endl;
+			}
+			if(a>b)
+			{
+				x=n/a;
+				y=n/b;
+				y=y-x;
+				if(y>=k)
+				cout<<"Win"<<endl;
+				else
+				cout<<"Lose"<<endl;
+			}
+		}
+		else
+		{
+		
+		  x=n/a;
+		  y=n/b;
+		  z=n/(a*b);
+		  x=x-z;
+		  y=y-z;
+		  if((x+y)>=k)
+		  cout<<"Win"<<endl;
+		  else
+		  cout<<"Lose"<<endl;
+	    }
+	    
+	}
+}
