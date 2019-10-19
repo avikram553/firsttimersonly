@@ -49,3 +49,25 @@ int main()
 	}
 	return 0;
 }
+//-----------------------------------------------------------------------------------
+//CODECHEF
+//CODE:- HOWMANY
+#include <iostream>
+using namespace std;
+
+int main() {
+    long n;
+    int c=0;
+    cin>>n;
+    while(n!=0)
+    {
+        c++;
+        n/=10;
+    }
+    if(c<=3)
+    cout<<c<<"\n";
+    else
+    cout<<"More than 3 digits";
+	return 0;
+}
+//--------------------------------------------------------------------------------------------------
